@@ -1,12 +1,126 @@
+
+
 body {
   font-size: 16px;
   background-image: url("../img/background.jpg");
-  background-size:cover;
+
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
 }
 
 .main-content {
   width: 60rem; /* 960px */
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 160rem;
+  margin-top: 2rem;
+}
 
+header {
+  display: flex;
+  align-items: center;
+  font-family: 'Amatic SC', cursive;
+
+  border-radius: 8px;
+  border: 2px solid pink;
+  margin-bottom: 0.5rem;
+}
+
+header ul {
+  margin-top: 1.5rem;
+}
+
+header ul li:first-child {
+    font-size: 6rem;
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+header ul li:last-child {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.menu {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.menu .main-menu {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  border: 2px solid pink;
+}
+
+.menu .main-menu ul {
+  margin: 1rem 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu .main-menu ul li {
+  text-align: center;
+  margin: 0 1rem;
+  padding: 0.1rem;
+}
+
+.menu .main-menu ul li a {
+  color: black;
+  text-decoration: none;
+  color: MediumVioletRed;
+  padding: 0.125rem;
+}
+
+.menu .main-menu ul li a:hover {
+  border-top: 1px solid MediumVioletRed;
+  border-bottom: 1px solid MediumVioletRed;
+}
+
+.menu .sub-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 2px solid pink;
+  margin-top: 0.5rem;
+}
+
+
+.menu .sub-menu h3 {
+  text-align: center;
+  margin-top: 1rem;
+  color: MediumVioletRed;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.menu .sub-menu .divide {
+  display: flex;
+  justify-content: center;
+}
+
+.menu .sub-menu ul {
+  margin: 1rem 1rem;
+  font-size: 1.2rem;
+}
+
+.menu .sub-menu ul li {
+  margin: 0 1rem;
+  padding: 0.3rem;
+}
+
+.menu .sub-menu ul li a {
+  color: black;
+  text-decoration: none;
+  color: MediumVioletRed;
+  padding: 0.125rem;
+}
+
+.menu .sub-menu ul li a:hover {
+  border-top: 1px solid MediumVioletRed;
+  border-bottom: 1px solid MediumVioletRed;
 }
