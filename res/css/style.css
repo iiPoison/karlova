@@ -3,11 +3,12 @@
 body {
   font-size: 16px;
   background-image: url("../img/background.jpg");
-
-  background-position: center;
-  background-repeat: repeat;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* фиксирует фон */
   display: flex;
   justify-content: center;
+
 }
 
 .main-content {
@@ -15,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: white;
-  height: 160rem;
+  height: auto;
   margin-top: 2rem;
 }
 
@@ -87,8 +88,8 @@ header ul li:last-child {
   border-radius: 8px;
   border: 2px solid pink;
   margin-top: 0.5rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-
 
 .menu .sub-menu h3 {
   text-align: center;
@@ -123,4 +124,108 @@ header ul li:last-child {
 .menu .sub-menu ul li a:hover {
   border-top: 1px solid MediumVioletRed;
   border-bottom: 1px solid MediumVioletRed;
+}
+
+/* footer menu */
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 2px solid pink;
+  margin-top: 0.5rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+.footer-menu h3 {
+  text-align: center;
+  margin-top: 1rem;
+  color: MediumVioletRed;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.footer-menu .divide {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu ul {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.footer-menu ul li {
+  margin: 0 1rem;
+  padding: 0.3rem 0;
+}
+
+.footer-menu ul li a {
+  color: black;
+  text-decoration: none;
+  color: MediumVioletRed;
+  padding: 0.125rem;
+}
+
+.footer-menu ul li a:hover {
+  border-top: 1px solid MediumVioletRed;
+  border-bottom: 1px solid MediumVioletRed;
+}
+
+/* основной контент */
+.content {
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid pink;
+}
+
+.content h4 {
+  font-family: 'Neucha', cursive;
+  margin-left: 4rem;
+  font-size: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.content h5 {
+  font-family: 'Neucha', cursive;
+  font-weight: bold;
+  margin-left: 4rem;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.content ul {
+  font-family: 'Open Sans', sans-serif;
+  margin: 2rem 4rem;
+}
+
+.content ul li {
+
+}
+
+.content ul li span {
+  padding-top: 1rem;
+  font-family: 'Neucha', cursive;
+  font-size: 1.3rem;
+}
+
+.content ul li:first-child {
+  line-height: 1.4;
+}
+
+.content ul li:last-child {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+/* Footer */
+footer {
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid pink;
 }
